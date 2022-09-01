@@ -1,8 +1,9 @@
 <section class="layout">
-
-    <div class="box">
-             <input type="text" placeholder="username">
-             <input type="text" placeholder="password">
-             <button class="btn btn-primary">sign up</button>
-     </div>
+    <form [formGroup]="loginform">
+        <div class="box">
+                 <input formControlName="username" type="text" placeholder="username">
+                 <input formControlName="password" type="text" placeholder="password">
+                 <button>sign up</button>
+         </div>
+    </form>
 </section>
