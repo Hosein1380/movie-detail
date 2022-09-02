@@ -2,8 +2,8 @@
     <form [formGroup]="loginform">
         <div class="box">
                  <input formControlName="username" type="text" placeholder="username">
-                 <input formControlName="password" type="text" placeholder="password">
-                 <button>sign up</button>
+                 <input formControlName="password" type="password" placeholder="password">
+                 <button (click)="login()">sign up</button>
          </div>
     </form>
 </section>
