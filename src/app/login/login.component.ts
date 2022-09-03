@@ -31,11 +31,8 @@ export class LoginComponent implements OnInit {
 
   login(){
     let body = new LoginModel("John.Doe", "9876543210");
-    console.log('2');
     this.loginService.getLogin(body).subscribe(res => {
-      debugger
       this.route.navigate(['movies'])
-      console.log('3');
     })
   }
 
